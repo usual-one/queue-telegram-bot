@@ -1,6 +1,6 @@
-from enum import Enum
+import enum
 
 
-class UserRole(Enum):
-    USER = 0
-    ADMIN = 1
+class UserRole(str, enum.Enum):
+    USER = 'user'
+    ADMIN = 'admin'
