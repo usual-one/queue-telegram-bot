@@ -29,7 +29,7 @@ class UserService:
     def get(self, id: int) -> User:
         return self.users[str(id)]
 
-    def __load(self, filepath: str) -> list[User]:
+    def __load(self, filepath: str) -> dict[User]:
         if not os.path.exists(filepath):
             return dict()
 
